@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <%-include('partials/head')%>
+  </head>
+  <body>
+    <%-include('partials/navigation')%>
+    <!-- main -->
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+      <div class="card bg-dark">
+        <div class="card-header">Hey</div>
+        <div class="card-body">
+          <h5 class="card-title">Thanks for stay here!</h5>
+          <p class="card-text">
+            If wanna be contact with me, click on the button
+          </p>
+          <a href="/contact" class="btn btn-primary">Go contact</a>
+        </div>
+      </div>
+    </div>
+    <%-include('partials/footer')%>
+  </body>
+</html>

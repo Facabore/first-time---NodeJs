@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%=title%></title>
+    <%-include('partials/head')%>
+  </head>
+  <body>
+    <!-- Bar navigation -->
+    <%-include('partials/navigation')%>
+    <!-- Main content -->
+    <form class="container w-75 pt-3 vh-100">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="firstName" />
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="lastName" />
+        </div>
+        <div class="col-12">
+          <label for="inputMail" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputMail"
+            placeholder="hi@example.com"
+          />
+        </div>
+        <div class="col-12">
+          <label for="commentsForm" class="form-label">Write me :)</label>
+          <textarea id="commentsForm"  rows="3" class="form-control"></textarea>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck">
+              Accept all policy
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </form>
+    <!-- Footer -->
+    <%-include('partials/footer')%>
+  </body>
+</html>

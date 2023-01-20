@@ -1,0 +1,7 @@
+body{
+  background-color: gray;
+  color: #fff;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+}
