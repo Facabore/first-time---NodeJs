@@ -12,5 +12,10 @@ app.set("views", join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.use(router);
 app.use(express.static(join(__dirname, 'public')))
+// Add a 404 error page.
+app.use((req, res)=>{
+  res.status(404).render('404', {title: 'Error 404'});
+});
 
 app.listen(PORT);
+
